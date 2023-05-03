@@ -57,7 +57,7 @@ To integrate SnapKit into your Xcode project using Swift Package Manager, add it
 
 ```swift
 dependencies: [
-    .package(url: "https://github.com/AutoConstraint/AutoConstraint.git", .upToNextMajor(from: "5.0.1"))
+    .package(url: "https://github.com/banjodayo39/AutoConstraint.git", .upToNextMajor(from: "1.0.0"))
 ]
 ```
 
