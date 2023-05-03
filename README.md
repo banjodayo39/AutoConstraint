@@ -1,15 +1,6 @@
 # AutoConstraint
-<img  src="https://drive.google.com/file/d/1wzW_74lobK6Po3yRXGbYdmNt3ZGEh8wU/view?usp=sharing" alt=""/>
-
-
-[![CI Status](https://img.shields.io/travis/banjodayo39@gmail.com/AutoConstraint.svg?style=flat)](https://travis-ci.org/banjodayo39@gmail.com/AutoConstraint)
-[![Version](https://img.shields.io/cocoapods/v/AutoConstraint.svg?style=flat)](https://cocoapods.org/pods/AutoConstraint)
-[![License](https://img.shields.io/cocoapods/l/AutoConstraint.svg?style=flat)](https://cocoapods.org/pods/AutoConstraint)
-[![Platform](https://img.shields.io/cocoapods/p/AutoConstraint.svg?style=flat)](https://cocoapods.org/pods/AutoConstraint)
 
 AutoConstraint is a library that simplifies the process of creating layout constraints in iOS apps. It allows you to create constraints in a more declarative way, which can help reduce boilerplate code and make your layout code more readable and maintainable.
-
-
 
 ## Contents
 
@@ -66,7 +57,7 @@ To integrate SnapKit into your Xcode project using Swift Package Manager, add it
 
 ```swift
 dependencies: [
-    .package(url: "https://github.com/SnapKit/SnapKit.git", .upToNextMajor(from: "5.0.1"))
+    .package(url: "https://github.com/AutoConstraint/AutoConstraint.git", .upToNextMajor(from: "5.0.1"))
 ]
 ```
 
