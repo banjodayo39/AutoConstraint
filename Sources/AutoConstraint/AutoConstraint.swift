@@ -162,6 +162,16 @@ public extension UIView {
         self.leadingAnchor.constraint(equalTo: constrainable.trailingAnchor, constant: padding).isActive = true
     }
     
+    func trailingToLeading(of constrainable: UIView, padding: CGFloat = 0) {
+        translatesAutoresizingMaskIntoConstraints = false
+        self.trailingAnchor.constraint(equalTo: constrainable.leadingAnchor, constant: padding).isActive = true
+    }
+    
+    func trailingToTrailing(of constrainable: UIView, padding: CGFloat = 0) {
+        translatesAutoresizingMaskIntoConstraints = false
+        self.trailingAnchor.constraint(equalTo: constrainable.trailingAnchor, constant: padding).isActive = true
+    }
+    
     func topToBottom(of constrainable: UIView, padding: CGFloat = 0, useSafeArea: Bool = false) {
         translatesAutoresizingMaskIntoConstraints = false
         self.topAnchor.constraint(equalTo: useSafeArea ? constrainable.safeAreaLayoutGuide.bottomAnchor
@@ -210,6 +220,12 @@ public extension UIView {
     func width(of width: CGFloat) {
         translatesAutoresizingMaskIntoConstraints = false
         self.widthAnchor.constraint(equalToConstant: width).isActive = true
+    }
+    
+    func width(to constrainable: UIView,
+                percent: CGFloat = 1) {
+        translatesAutoresizingMaskIntoConstraints = false
+        self.widthAnchor.constraint(equalTo: constrainable.widthAnchor, multiplier: percent).isActive = true
     }
 }
 #endif
@@ -367,6 +383,16 @@ public extension NSView {
         self.leadingAnchor.constraint(equalTo: constrainable.trailingAnchor, constant: padding).isActive = true
     }
     
+    func trailingToLeading(of constrainable: NSView, padding: CGFloat = 0) {
+        translatesAutoresizingMaskIntoConstraints = false
+        self.trailingAnchor.constraint(equalTo: constrainable.leadingAnchor, constant: padding).isActive = true
+    }
+    
+    func trailingToTrailing(of constrainable: NSView, padding: CGFloat = 0) {
+        translatesAutoresizingMaskIntoConstraints = false
+        self.trailingAnchor.constraint(equalTo: constrainable.trailingAnchor, constant: padding).isActive = true
+    }
+    
     func topToBottom(of constrainable: NSView, padding: CGFloat = 0, useSafeArea: Bool = false) {
         translatesAutoresizingMaskIntoConstraints = false
         self.topAnchor.constraint(equalTo: useSafeArea ? constrainable.layoutMarginsGuide.bottomAnchor
@@ -415,6 +441,12 @@ public extension NSView {
     func width(of width: CGFloat) {
         translatesAutoresizingMaskIntoConstraints = false
         self.widthAnchor.constraint(equalToConstant: width).isActive = true
+    }
+    
+    func width(to constrainable: NSView,
+               percent: CGFloat = 1) {
+        translatesAutoresizingMaskIntoConstraints = false
+        self.widthAnchor.constraint(equalTo: constrainable.widthAnchor, multiplier: percent).isActive = true
     }
 }
 #endif
